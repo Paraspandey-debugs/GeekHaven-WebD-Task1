@@ -1,18 +1,94 @@
 .login-form__container--dark {
     height: 100vh;
-    background-color: black;
+    background-color: #181818;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Segoe UI', Arial, sans-serif;
 }
-.login-form__form{
+.login-form__form-container{
+    flex-grow: 2;
+}
+.login-form__img-form-container {
+    display: flex;
+    background: #222;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.login-form__form {
+    padding: 40px 32px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    gap: 18px;
+    min-width: 320px;
+    align-items: center;
 }
-.login-form__input{
-    padding: 20px;
+
+.login-form__input {
+    padding: 14px 16px;
+    border: none;
+    border-radius: 6px;
+    background: #333;
+    color: #fff;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    outline: none;
+    width: 80%;
+    min-width: 20px;
+    transition: background 0.2s;
 }
-.login-form__submit{
-    padding: 20px;
+
+.login-form__input:focus {
+    background: #444;
+}
+
+.login-form__submit {
+    padding: 14px 16px;
+    border: none;
+    border-radius: 6px;
+    background: #0078d4;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+    width: 80%;
+    min-width: 20px;
+}
+
+.login-form__submit:hover {
+    background: #005fa3;
+}
+
+.login-form__error {
+    color: #ff4d4f;
+    background: #2a0000;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 0.95rem;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.login-form__image-container {
+    flex-grow: 1;
+}
+
+.login-form__img {
+    object-fit: cover;
+    height: 100%;
+}
+
+.login-form__img--dark {
+    height: 100%;
+}
+
+@media (max-width: 768px) {
+    .login-form__image-container {
+        display: none;
+    }
+}
+.login-form__Welcome{
+    color: white;
 }
