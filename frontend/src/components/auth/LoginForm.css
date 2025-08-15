@@ -1,0 +1,18 @@
+.login-form__container--dark {
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-form__form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.login-form__input{
+    padding: 20px;
+}
+.login-form__submit{
+    padding: 20px;
+}
